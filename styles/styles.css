@@ -91,7 +91,7 @@ body {
     border-radius: 12px;
     object-fit: cover;
   }
-/*::contentReference[oaicite:0]{index=0}*/
+/* ::contentReference[oaicite:0]{index=0} */
 
   .mission-content > div {
     flex: 1 1 300px;
