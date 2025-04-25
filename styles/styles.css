@@ -1,4 +1,4 @@
-/* Grundlegende Stile */
+/* Body */
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -66,12 +66,14 @@ body {
   }
   
   .feature img {
-    width: 100%;
     border-radius: 10px;
+    width: 100%;
+    height: 220px;
   }
   
   /* Mission */
   .mission {
+    height: fit-content;
     padding: 3em 1em;
   }
   
@@ -98,10 +100,13 @@ body {
     max-width: 600px;
   }
 
+
+
 /* Produkte */
 
 #produkte {
     text-align: center;
+    background-color: #f9f9f9;
 }
 
 .produkt-grid {
@@ -135,8 +140,56 @@ body {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 1em;
   }
-  
 
+/* KUNDENSTIMMEN */
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em 1em;
+}  
+
+body > section.kundenstimmen > div > div.testimonial {
+  width: 50%;
+}
+
+body > section.kundenstimmen > div > div.testimonial > h2 {
+  color: #51280B;
+}
+
+body > section.kundenstimmen > div > div.testimonial > blockquote {
+  margin-left: 20px;
+  color: #51280B;
+}
+
+body > section.kundenstimmen > div > div.testimonial > cite {
+  margin-left: 40px;
+  color: #51280B;
+}
+
+/* NEWSLETTER */ 
+
+.newsletter {
+  justify-content: right; 
+  text-align: right;
+}
+
+body > section.kundenstimmen > div > div.newsletter > * {
+  color:  #51280B;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+  font-size: small;
+}
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
@@ -146,6 +199,29 @@ body {
     }
   
     .mission-content img {
-      max-width: 90%;
+      max-width: 40%;
     }
+    .unsere-mission {
+      max-height: 100px;
+    }
+
+    body > section.kundenstimmen > div > div.testimonial {
+      width: 100%;
+    }
+
+    .kundenstimmen {
+      justify-content: center; 
+      text-align: center;
+    }
+
+    .newsletter {
+      justify-content: center; 
+      text-align: center;
+    }
+
+    .newsletter > form{
+      padding-bottom: 20px;
+    }
+
   }
+
