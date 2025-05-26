@@ -82,11 +82,14 @@
     <div class="newsletter">
     <h2>Newsletter abonnieren</h2>
     <p>Bleib up to date & erhalte 10% auf deine erste Bestellung</p>
-      <form id="newsletter-form" action="https://formsubmit.co/valentin.lorenz@chale-cosmetics.de" method="POST">
+      <form id="newsletter-form" class="newsletter-form" action="https://formsubmit.co/valentin.lorenz@chale-cosmetics.de" method="POST">
+        <div class="newsletter-row">
+
         <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required />
         <input type="text" name="_honey" style="display:none">
         <input type="hidden" name="_captcha" value="false">
         <button type="submit" class="btn">Anmelden</button>
+        </div>
       </form>
 
       <!--  Erfolgsbanner -->
@@ -127,7 +130,7 @@
                   const banner = document.getElementById('confirmation-banner');
                   banner.style.display = 'block';
 
-                  // Banner nach 5 Sekunden ausblenden
+
                   setTimeout(() => {
                     banner.style.display = 'none';
                   }, 5000);
