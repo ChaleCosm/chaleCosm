@@ -256,14 +256,16 @@ body > section.kundenstimmen > div > div.newsletter > * {
 
 
 input[type="email"] {
-  font-size: 16px;
+  font-size: 16px !important; 
   padding: 0.75em 1em;
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 100%;
   max-width: 350px;
   box-sizing: border-box;
+  background-color: #fff;
 }
+
 
 /* Newsletter-Formular zentrieren */
 .newsletter form {
