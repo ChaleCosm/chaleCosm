@@ -266,7 +266,24 @@ input[type="email"] {
   padding: 0.75em 1.5em;
   font-size: 1rem;
   height: 100%;
-  margin-top: 0; /* entfernt Abstand von .btn-Klasse */
+  margin-top: 0;
+}
+
+/* Kontaktseite */
+
+.kontaktseite input[type="email"],
+.kontaktseite input[type="text"],
+.kontaktseite textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* RESPONSIVE */
