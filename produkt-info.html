@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produktinformation – Chale Cosmetics</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-content">
+    <h1>Unsere Shea-Butter</h1>
+    <p>Rein. Unraffiniert. In Vorbereitung.</p>
+  </div>
+</header>
+
+<section class="mission">
+  <div class="mission-content">
+    <div>
+      <h2>Produkt noch nicht verfügbar</h2>
+      <p>Wir befinden uns aktuell in Gesprächen mit potenziellen Lohnherstellern für unsere unraffinierte Shea-Butter.</p>
+      <p>Wenn Sie Interesse an einer Zusammenarbeit oder Fragen zu unserem Produkt haben, freuen wir uns über Ihre Nachricht.</p>
+    </div>
+  </div>
+</section>
+
+<section class="kontaktformular kontaktseite" style="padding: 2em 1em; text-align: center;">
+  <h2>Kontaktformular</h2>
+  <form action="https://formsubmit.co/valentin.lorenz@chale-cosmetics.de" method="POST" style="max-width: 500px; margin: 0 auto;">
+    <input type="text" name="name" placeholder="Ihr Name" required style="width: 100%; padding: 0.75em; margin-bottom: 1em; border-radius: 5px; border: 1px solid #ccc;" />
+    <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required style="width: 100%; padding: 0.75em; margin-bottom: 1em; border-radius: 5px; border: 1px solid #ccc;" />
+    <textarea name="nachricht" placeholder="Ihre Nachricht" required style="width: 100%; padding: 0.75em; height: 150px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 1em;"></textarea>
+
+    <!-- Anti-Bot & Konfiguration -->
+    <input type="hidden" name="_subject" value="Neue Nachricht über Produktseite">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://www.chale-cosmetics.de/index.html">
+    <input type="text" name="_honey" style="display:none">
+
+    <button type="submit" class="btn">Nachricht senden</button>
+  </form>
+
+  <div id="confirmation-banner">Danke für deine Nachricht!</div>
+
+</section>
+
+<footer class="footer" style="text-align: center; padding: 2em 1em;">
+  <p>&copy; 2025 Chale Cosmetics</p>
+</footer>
+</body>
+</html>
