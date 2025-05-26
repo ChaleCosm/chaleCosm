@@ -2,7 +2,7 @@
 if (isset($_POST['email'])) {
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 
-    $to = "valentin.lorenz@chale-cosmetics.de"; // ← Ersetze mit deiner echten E-Mail-Adresse
+    $to = "valentin.lorenz@chale-cosmetics.de"; 
     $subject = "Neue Newsletter-Anmeldung";
     $message = "Folgende E-Mail wurde neu eingetragen: $email";
     $headers = "From: newsletter@chale-cosmetics.de";
