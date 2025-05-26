@@ -229,6 +229,17 @@ body > section.kundenstimmen > div > div.newsletter > * {
   gap: 1em;
 }
 
+input[type="email"] {
+  font-size: 16px; /*!important;*/
+  padding: 0.75em 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
@@ -266,14 +277,5 @@ body > section.kundenstimmen > div > div.newsletter > * {
     bottom: 80px; /* Abstand vom unteren Rand auf Mobilgeräten */
   }
 
-  input[type="email"] {
-    font-size: 16px; /*!important;*/
-    padding: 0.75em 1em;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-    max-width: 350px;
-    box-sizing: border-box;
-    background-color: #fff;
-  }
+
 }
