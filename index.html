@@ -3,50 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Produktinformation – Chale Cosmetics</title>
+  <title>Chale Cosmetics – Reine Shea-Butter aus Ghana</title>
   <link rel="stylesheet" href="styles/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="hero">
-  <div class="hero-content">
-    <h1>Unsere Shea-Butter</h1>
-    <p>Rein. Unraffiniert. In Vorbereitung.</p>
-  </div>
-</header>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Chale Cosmetics</h1>
+      <p>Natürlich. Fair. Handgemacht.</p>
+      <a href="#produkte" class="btn">Jetzt kaufen</a>
+    </div>
+  </header>
 
-<section class="mission">
-  <div class="mission-content">
-    <div>
-      <h2>Produkt noch nicht verfügbar</h2>
-      <p>Wir befinden uns aktuell in Gesprächen mit potenziellen Lohnherstellern für unsere unraffinierte Shea-Butter.</p>
-      <p>Wenn Sie Interesse an einer Zusammenarbeit oder Fragen zu unserem Produkt haben, freuen wir uns über Ihre Nachricht.</p>
+  <section class="features">
+    <div class="feature">
+      <img src="images/reine-shea.jpg" alt="Reine Shea-Butter" />
+      <h3>100% reine Shea-Butter</h3>
+      <p>Unraffiniert, duftneutral & hautfreundlich.</p>
+    </div>
+    <div class="feature">
+      <img src="images/frau.jpg" alt="Handgemacht in Ghana" />
+      <h3>Handgemacht in Ghana</h3>
+      <p>Direkt aus einer Frauenkooperative.</p>
+    </div>
+    <div class="feature">
+      <img src="images/handgemacht.jpg" alt="Nachhaltig & fair" />
+      <h3>Natürlich & nachhaltig</h3>
+      <p>Ohne Zusatzstoffe. Fair gehandelt.</p>
+    </div>
+  </section>
+
+  <section class="mission">
+    <div class="mission-content">
+      <img src="images/mission.png" alt="Unsere Mission" />
+      <div class="unsere-mission">
+        <h2>Unsere Mission</h2>
+        <p>Wir unterstützen lokale Strukturen in Ghana durch fairen Handel und nachhaltige Produktion. Unsere Shea-Butter wird in Handarbeit von Frauenkooperativen hergestellt, um Qualität und soziale Verantwortung zu gewährleisten.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="produkte" class="produkte">
+    <h2><br>Unsere Produkte</h2>
+    <div class="produkt-grid">
+      <div class="produkt">
+        <img src="images/produkt-100ml.png" alt="100 ml Shea-Butter" />
+        <h4>100ml Shea-Butter</h4>
+        <p>Ideal für unterwegs.</p>
+        <button onclick="window.location.href='produkt-info.html'" class="btn">In den Warenkorb</button>
+      </div>
+      <div class="produkt">
+        <img src="images/produkt-250ml.png" alt="250 ml Shea-Butter" />
+        <h4>250ml Shea-Butter</h4>
+        <p>Für den täglichen Gebrauch.</p>
+        <button onclick="window.location.href='produkt-info.html'" class="btn">In den Warenkorb</button>
+      </div>
+      <div class="produkt">
+        <img src="images/produkt-500ml.png" alt="500 ml Shea-Butter" />
+        <h4>500ml Shea-Butter</h4>
+        <p>Familiengröße.</p>
+        <button onclick="window.location.href='produkt-info.html'" class="btn">In den Warenkorb</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="kundenstimmen">
+    <div class="footer-grid">
+      <div class="testimonial">
+    <h2>Was unsere Kunden sagen</h2>  
+      <blockquote>„Meine Haut war nie weicher.“</blockquote>
+      <cite>– Anna S.</cite>
+
+      <blockquote>„Endlich weiß ich, woher mein Produkt kommt.“</blockquote>
+      <cite>– Markus T.</cite>
+    </div>
+
+    <div class="newsletter">
+    <h2>Newsletter abonnieren</h2>
+    <p>Bleib up to date & erhalte 10% auf deine erste Bestellung</p>
+      <form id="newsletter-form" class="newsletter-form" action="https://formsubmit.co/valentin.lorenz@chale-cosmetics.de" method="POST">
+        <div class="newsletter-row">
+
+        <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required />
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="btn">Anmelden</button>
+        </div>
+      </form>
+
+      <!--  Erfolgsbanner -->
+      <div id="confirmation-banner">Danke für deine Anmeldung! 🎉</div>
+
+
     </div>
   </div>
-</section>
+  </section>
 
-<section class="kontaktformular kontaktseite" style="padding: 2em 1em; text-align: center;">
-  <h2>Kontaktformular</h2>
-  <form action="https://formsubmit.co/valentin.lorenz@chale-cosmetics.de" method="POST" style="max-width: 500px; margin: 0 auto;">
-    <input type="text" name="name" placeholder="Ihr Name" required style="width: 100%; padding: 0.75em; margin-bottom: 1em; border-radius: 5px; border: 1px solid #ccc;" />
-    <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required style="width: 100%; padding: 0.75em; margin-bottom: 1em; border-radius: 5px; border: 1px solid #ccc;" />
-    <textarea name="nachricht" placeholder="Ihre Nachricht" required style="width: 100%; padding: 0.75em; height: 150px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 1em;"></textarea>
+  <footer class="footer">
 
-    <!-- Anti-Bot & Konfiguration -->
-    <input type="hidden" name="_subject" value="Neue Nachricht über Produktseite">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="/index.html">
-    <input type="text" name="_honey" style="display:none">
+    <nav>
+      <a href="index.html">Startseite</a> |
+      <a href="about.html">Über uns</a> |
+      <a href="contact.html">Kontakt</a> |
+      <a href="#">Datenschutz</a> |
+      <a href="impressum.html">Impressum</a>
+      <p id="footer">&copy; 2025 Chale Cosmetics</p>
+    </nav>
+    
+  </footer>
+  <script>
+    document.getElementById('newsletter-form').addEventListener('submit', function (e) {
+      e.preventDefault();
 
-    <button type="submit" class="btn">Nachricht senden</button>
-  </form>
+      const form = e.target;
+      const formData = new FormData(form);
 
-  <div id="confirmation-banner">Danke für deine Nachricht!</div>
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+              .then(response => {
+                if (response.ok) {
+                  form.reset();
+                  const banner = document.getElementById('confirmation-banner');
+                  banner.style.display = 'block';
 
-</section>
 
-<footer class="footer" style="text-align: center; padding: 2em 1em;">
-  <p>&copy; 2025 Chale Cosmetics</p>
-</footer>
+                  setTimeout(() => {
+                    banner.style.display = 'none';
+                  }, 5000);
+                } else {
+                  alert("Fehler beim Absenden. Bitte versuch es später erneut.");
+                }
+              })
+              .catch(() => alert("Verbindung fehlgeschlagen. Prüfe deine Internetverbindung."));
+    });
+  </script>
+
 </body>
 </html>
